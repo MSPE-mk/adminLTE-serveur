@@ -12,10 +12,10 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
   res.send("Hello World");
 });
-// Require produit routes
-const produitRoutes = require('./src/routes/produit.routes')
+// Require action routes
+const actionRoutes = require('./src/routes/action.routes')
 // using as middleware
-app.use('/api/v1/produits', produitRoutes)
+app.use('/api/v1/actions', actionRoutes)
 // listen for requests
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);

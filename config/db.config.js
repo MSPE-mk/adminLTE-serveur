@@ -5,7 +5,7 @@ const dbConn = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'root',
-  database : 'sysmodb'
+  database : 'dashbordIT'
 });
 dbConn.connect(function(err) {
   if (err) throw err;
